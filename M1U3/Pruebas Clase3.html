@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Unidad 3</title>
+</head>
+
+<body>
+    <h1>Wassily Kandinsky</h1>
+    <!-- el encabezado1 se debería utilizar sólo una vez -->
+    <h2>Vida Personal</h2>
+    <h3>Inicios</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odio atque necessitatibus optio dolor consequuntur facere, fugit sapiente nemo earum animi cum repellat eligendi culpa, eius, dolores impedit unde nesciunt.</p>
+    <!-- etiqueta "p" para parrafos, "lorem" es un texto aleatorio -->
+    <h3>Juventud</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste a illum fuga reprehenderit nemo quaerat accusamus error? Ullam labore nesciunt consequatur. Fuga odit ipsam similique dicta eum, inventore ex expedita.</p>
+    <h3>Muerte</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda neque maiores incidunt illo unde ullam, distinctio velit nihil minima voluptatibus, ea quisquam labore dolorem quam temporibus aperiam iure sit facilis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus eligendi, consequuntur dolorum adipisci quam quasi vel fuga et mollitia, iure quae sapiente obcaecati molestiae praesentium soluta, fugit ipsa! Nulla, maxime!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam sapiente voluptate quibusdam debitis deleniti dolorum iste quas earum, perferendis ab iure sit, eaque odit nihil aperiam cum voluptatibus vero omnis.</p>
+
+
+    <h3>Obras</h3>
+    <ul>
+    <!-- lista desordenada (viñeta) -->
+        <li>Obra1</li>
+        <li>Obra2</li>
+        <li>Obra3</li>
+    </ul>
+
+    <h3>Años</h3>
+    <ol>
+    <!-- lista ordenada (con numeración) -->
+        <li>Año1970</li>
+        <li>Año1980</li>
+        <li>Año1990</li>
+    </ol>
+
+    <h3>Otras Obras</h3>
+    <!-- etiqueta para enlaces + atributo nueva pestaña -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero hic dolorum modi eligendi totam accusamus quibusdam odit dicta quam, quos quaerat soluta saepe eaque dolor mollitia pariatur, a ipsum optio. Más info <a href="https://www.meisterdrucke.es/impresion-art%C3%ADstica/Wassily-Kandinsky/" target="_blank">aquí</a></p>
+
+    <h3>Algunas Pinturas</h3>
+
+    <h4>Composition VIII</h4>
+    <img src="img_prueba/Composition_VIII.jpg" alt="Composition VIII">
+    
+
+
+
+    _______________________________________________________________________________________________________________________________________
+
+
+    <h2>OTRAS PRUEBAS VARIAS</h2>
+
+    <h3>Etiqueta SVG</h3>
+    <!-- No entiendo exactamente que implica cada variable, como centrar la imagen y demás -->
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="10" fill="yellow" />
+    </svg>
+
+    <h3>Etiqueta AUDIO</h3>
+    <audio src="mp3_prueba/audio_tormenta.mp3" controls></audio>
+
+    <!-- Tuve que sacar el video porque por el peso no me dejaba subir a GitHub, pero funcionaba OK 
+        <h3>Etiqueta VIDEO</h3>
+    <video src="mp4_prueba/video_lluvia.mp4" controls></video> 
+    -->
+
+    
+    <h3>Etiqueta FORMULARIO</h3>
+
+    <H4>Complete el siguiente formulario</H4>
+    <form action="" method="">
+        <p>
+            <label for="Nom">Nombre</label>
+            <input type="text" placeholder="completar nombre" id="Nom">
+            <label for="Apell">Apellido</label>
+            <input type="text" placeholder="completar apellido" id="Apell">
+        </p>
+
+        <p>
+            <label for="pass">Contraseña</label>
+            <input type="password" name="pass" placeholder="completar contraseña" id="pass">
+        </p>
+        
+        <p>
+            <label for="sexo">Sexo</label>
+            <ul>
+                <li><input type="radio" name="sexo" value="Hombre">
+                    <label>Hombre</label>
+                </li>
+                <li>
+                    <input type="radio" name="sexo" value="Mujer">
+                    <label>Mujer</label>
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            <label>Hobbies</label>
+            <ul>
+                <li>
+                    <input type="checkbox" name="hobbiesss" value="bailar" id="bailar">
+                    <label for="bailar">Bailar</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobbiesss" value="cantar" id="cantar">
+                    <label for="cantar">Cantar</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobbiesss" value="nadar" id="nadar">
+                    <label for="nadar">Nadar</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="hobbiesss" value="corer" id="correr">
+                    <label for="correr">Correr</label>
+                </li>
+            </ul>
+        </p>
+        
+        <p>
+            <label for="titulo">Titulo</label>
+            <select name="titulo" id="titulo">
+                <option value="primario">Primario</option>
+                <option value="secundario">Secundario</option>
+                <option value="terciario">Terciario</option>
+                <option value="universitario">Universitario</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Borrar" />
+        </p>
+
+    </form>
+
+
+    <H3>¡Falta Probar!</H3>
+    <ul>
+        <li>Etiqueta DIV</li>
+        <li>Etiquetas SEMANTICAS</li>
+        <ol>
+            <li>Header</li>
+            <li>Nav</li>
+            <li>Aside</li>
+            <li>Footer</li>
+            <li>Main</li>
+            <li>Section</li>
+            <li>Article</li>
+        </ol>
+    </ul>
+
+
+</body>
+
+</html>
