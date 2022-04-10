@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Contacto</title>
+</head>
+<body>
+    <form action="" method="">
+        <p>
+            <label for="NombreCompleto">Nombre y Apellido</label>
+            <input type="text" id="NombreCompleto">
+        </p>
+
+        <p>
+            <label for="Empresa">Empresa</label>
+            <input type="text" id="Empresa">
+        </p>
+
+        <p>
+            <label for="Telefono">Teléfono Contacto</label>
+            <input type="tel" id="Telefono">
+        </p>
+
+        <p>
+            <label for="Mail">Correo Electrónico</label>
+            <input type="email" id="Mail">
+        </p>
+
+        <p>
+            <label for="rubro">Rubro</label>
+            <ul>
+                <li><input type="radio" name="rubro" value="Comercio">
+                    <label>Comercio</label>
+                </li>
+                <li>
+                    <input type="radio" name="rubro" value="Salud">
+                    <label>Salud</label>
+                </li>
+                <li><input type="radio" name="rubro" value="Industrial">
+                    <label>Industrial</label>              
+                </li>
+                <li>
+                    <input type="radio" name="rubro" value="Audiovisual">
+                    <label>Audiovisual</label>
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            <label>Formas de Contactación</label>
+            <ul>
+                <li><input type="checkbox" name="Formas de Contactación" value="Teléfono" id="Teléfono">
+                    <label for="Teléfono">Teléfono</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Formas de Contactación" value="E-Mail" id="E-mail">
+                    <label for="E-Mail">E-Mail</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Formas de Contactación" value="Videollamada" id="Videollamada">
+                    <label for="Videollamada">Videollamada</label>
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            <label for="Pto Vacante">Puesto Vacante</label>
+            <select name="Puesto Vacante" id="Pto Vacante">
+                <option value="Responsable de Control y Gestión">Responsable Control y Gestion</option>
+                <option value="Analista de Datos">Analista de Datos</option>
+                <option value="Analista Funcional">Analista Funcional</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="Coment">Observaciones</label>
+            <textarea name="Observaciones" id="Coment"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Borrar" />
+        </p>
+
+        
+    </form>
+
+</body>
+</html>
