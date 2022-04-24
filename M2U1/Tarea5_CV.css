@@ -1,20 +1,19 @@
 h1 {
-    background-color: #c9fca9;
-    color:  #0e2301;
+    color: #0e2301;
     font-size: 40pt;
     text-align: center;
     text-shadow: 1px -1px #b0db95;
+
+    background: #aee2ae;
+    background: radial-gradient(circle farthest-corner at center center, #aee2ae 0%, rgba(68, 251, 68, 0.76) 100%);
+    background: -webkit-radial-gradient(circle farthest-corner at center center, #aee2ae 0%, rgba(68, 251, 68, 0.76) 100%);
+    background: -moz-radial-gradient(circle farthest-corner at center center, #aee2ae 0%, rgba(68, 251, 68, 0.76) 100%);
 }
 
 h3 {
     color: #0e2301;
     text-shadow: 1px -1px #c5fca3;
 }
-
-/* p {
-    font-style:italic
-}
- */
 
 .destacado {
     font-weight: 900;
@@ -25,13 +24,18 @@ h3 {
 }
 
 #agua {
-    /* margin: auto; */
     width: 900px;
     height: 295px;
-    background-color: #c9fca9;
+    /*background-color: #c9fca9;*/
     padding: 15px;
     box-sizing: border-box;
     margin-top: 15px;
-    border: 2px dashed green;
     font-size: 13pt;
+
+    border: 10px double #7ec77e;
+    background: #eaffdc;
+
+border-radius: 20px 20px 20px 20px;
+-webkit-border-radius: 20px 20px 20px 20px;
+-moz-border-radius: 20px 20px 20px 20px;
 }
