@@ -54,23 +54,41 @@ h3 {
     -moz-border-radius: 20px 0px 20px 0px;
 }
 
-.columna {
+.columnas {
     column-count: 3;
     column-gap: 30px;
     column-rule: 2px solid rgb(2, 119, 2);
     text-align: justify;
 }
 
-.columna p {
+/*para que el primer párrafo de las columnas no tenga margen y quede distinto a las demás columnas*/
+.columnas p {
     margin: 0;
 }
 
+/*color para los íconos*/
 .color {
     color: green;
 }
 
-.link-top {
+.linea_divisoria {
     width: 55%;
     height: 1px;
     border-top: solid green 2px;
+}
+
+/*porque el segundo ícono no tiene el mismo tamaño que los otros, agrego margen derecho*/
+.separar_icono {
+    margin-right: 6px;
+}
+
+
+/* para que la imagen esté gris y al pasar el cursor tome sus colores originales*/
+img{
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+img:hover{
+    filter: grayscale(0);
 }
