@@ -4,8 +4,14 @@
 	height: 600px;
 	margin: auto;
 
-	/* no encontré como hacerlo con las otras opciones */
-	direction: rtl;
+	/* no encontré como hacer que quede alineado a la izquierda con las opciones explicadas, usé esta forma que me apareció en internet 
+	direction: rtl;*/
+
+	
+	/* de esta manera lo corrigió Flavia */
+	display: flex;
+    align-items: flex-end;
+    flex-direction: column;
 
 }
 
