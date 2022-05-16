@@ -1,0 +1,75 @@
+
+.card {
+    margin-top: 60px;
+    height: 370px;
+    padding-top: 10%;
+    align-items: center;
+    text-align: center;
+}
+
+.card:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 0px 38px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 38px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 38px -7px rgba(0,0,0,0.75);
+}
+
+.card-img-top {
+    width: 150px;
+    height: 150px;
+}
+
+.logo {
+    margin-left:10px;
+    margin-right: 30px;
+}
+
+
+/* sobre esto quería poner una imagen de fondo con "background-image", que tuviese opacidad y quedase el texto centrado a la izquierda y la imagen en el centro, pero probé varias cosas sin conseguirlo 
+.texto_inicial {
+    padding: 30px;
+}
+*/
+
+.izquierda {
+    margin-top: 40px;
+    width: 600px;
+    margin-left: 107px;
+    margin-bottom: 100px;
+}
+
+.animacion_link {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+.animacion_link:hover, a:focus {
+    background-size: 100% 2px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.titulo {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.formulario {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgb(230, 230, 230);
+}
+
+h3 {
+    text-align: center;
+}
+
+.carousel {
+    margin-top: 30px;
+}
