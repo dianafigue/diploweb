@@ -1,0 +1,113 @@
+/* font-family: 'Plus Jakarta Sans', sans-serif; */
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    font-size: 15px;
+    line-height: 25px;
+}
+
+header {
+    background-color: #920162;
+    padding: 10px 0 0;
+}
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    /* font-style: italic; */
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+}
+
+header img {
+    max-width: 7%;
+}
+
+nav {
+    background-color: #ce078b;
+    margin-bottom: 90px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: white;
+    /* border: 2px black solid; */
+    text-decoration: none;
+    padding: 1px 6px;
+    display: block;
+    text-align: center;
+
+    /* como quiero que quede todo a la izquierda sería
+    text-align: end; 
+    pero me falta entender como hacer para que quede con menor separacion entre cada item de la lista */
+}
+
+nav ul li:hover {
+    background-color: #a80070;
+}
+
+footer {
+    background-color: #3a0027;
+    clear: both;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 50px;
+}
+
+nav ul li a.activo { 
+    background-color: #a80070;
+}
+
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+ } 
+
+
+/* inicio MAIN */
+
+main {
+    background-image: url(https://torneosindiana.com.ar/wp-content/uploads/2019/09/portadaWeb-1920.jpg);
+    background-size: cover;
+    padding: 200px;
+}
+
+h2 {
+    color: #a80070;
+    font-weight: 600;
+    font-size: 31px;
+}
+
+.inscribite p{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    width: 70%;
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+
+.button {
+    /* falta hover y animación */
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    background-color:#a80070;
+    border-color: #a80070;
+    color: white;
+}
+
+
