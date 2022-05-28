@@ -10,7 +10,7 @@ header {
     background-color: #920162;
     /* padding: 10px 0 0; */
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -21,22 +21,21 @@ header h1 {
     /* font-style: italic; */
     display: inline-block;
     position: relative;
-    bottom: 11px;
+    bottom: 22px;
 }
 
 header img {
-    max-width: 11%;
+    max-width: 15%;
+    margin-top: 5px;
 }
 
 nav {
     background-color: #920162;
-    /* margin-bottom: 90px; */
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    padding-right: 15px;
     display: flex;
 }
 
@@ -46,7 +45,6 @@ nav ul li {
 
 nav ul li a {
     color: white;
-    /* border: 2px black solid; */
     text-decoration: none;
     padding-right: 10px;
     display: block;
@@ -66,19 +64,26 @@ footer {
     /* margin-top: 50px; */
 }
 
+nav ul li a.activo {
+    background-color: #a80070;
+}
+
 .holder {
     max-width: 960px;
     margin: 0 auto;
  } 
 
 
-/* inicio MAIN */
+/* inicio main HOME */
 
-main {
+
+/* quito esto hasta tanto no sepa como poner bien la foto de fondo
+main { 
     background-image: url(https://torneosindiana.com.ar/wp-content/uploads/2019/09/portadaWeb-1920.jpg);
     background-size: cover;
     padding: 200px;
 }
+*/
 
 h2 {
     color: #a80070;
@@ -89,7 +94,7 @@ h2 {
 .inscribite p{
     font-size: 18px;
     font-weight: 400;
-    color: white;
+    color: black; /* hasta tanto no pueda poner la imagen de fondo, dejo el texto de main en negro */
     width: 70%;
     padding-right: 100px;
     box-sizing: border-box;
@@ -105,4 +110,41 @@ h2 {
     color: white;
 }
 
+/* fin main HOME */
 
+
+
+/* inicio main TORNEOS */
+
+.torneo {
+    border: 1px solid #a80070;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 10px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+main h2 { 
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.torneo img {
+    border-radius: 13px;
+    display: block;
+    max-width: 225px;
+}
+
+.torneo:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* fin main TORNEOS */
+
+
+
+/* inicio main... */
+
+/* inicio main... */
