@@ -104,10 +104,11 @@ h2 {
     /* falta hover y animación */
     cursor: pointer;
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px 30px;
     background-color:#a80070;
     border-color: #a80070;
     color: white;
+    margin-bottom: 20px;
 }
 
 /* fin main HOME */
@@ -140,6 +141,13 @@ main h2 {
 .torneo:nth-child(even) {
     flex-direction: row-reverse;
 }
+
+/* 
+.f5_fem, 
+.f8_fem {
+    background-color: yellow;
+}
+*/
 
 /* fin main TORNEOS */
 
