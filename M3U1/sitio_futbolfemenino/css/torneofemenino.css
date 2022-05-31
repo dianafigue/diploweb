@@ -6,6 +6,12 @@ body {
     line-height: 25px;
 }
 
+.foto_portada {
+    background-image: url("../img/home/fondo_portada.jpg");
+    background-size: cover;
+
+}
+
 header {
     background-color: #920162;
     /* padding: 10px 0 0; */
@@ -48,11 +54,20 @@ nav ul li a {
     text-decoration: none;
     padding-right: 10px;
     display: block;
+    border-radius: 5px;
     /* text-align: center; */
+    background-image: linear-gradient(#77255c,#d80d94);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+   
 }
 
-nav ul li:hover {
+nav ul li a:hover {
     background-color: #a80070;
+    border-radius: 5px;
+    background-size: 100% 2px;
 }
 
 footer {
@@ -66,6 +81,8 @@ footer {
 
 nav ul li a.activo {
     background-color: #a80070;
+    border-radius: 5px;
+    background-size: 100% 2px;
 }
 
 .holder {
@@ -94,21 +111,30 @@ h2 {
 .inscribite p{
     font-size: 18px;
     font-weight: 400;
-    color: black; /* hasta tanto no pueda poner la imagen de fondo, dejo el texto de main en negro */
+    color: white; 
     width: 70%;
     padding-right: 100px;
     box-sizing: border-box;
 }
 
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
 .button {
-    /* falta hover y animación */
+    background-color: #920162;
+    border-color: #920162;
+    color: white;
+    padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
-    padding: 10px 30px;
-    background-color:#a80070;
-    border-color: #a80070;
-    color: white;
-    margin-bottom: 20px;
+    margin-bottom: 300px;
+}
+
+.button:hover {
+    background-color: #3a0027;
+    border-color: #3a0027;
 }
 
 /* fin main HOME */
@@ -118,7 +144,7 @@ h2 {
 /* inicio main TORNEOS */
 
 .torneo {
-    border: 1px solid #a80070;
+    /* border: 1px solid #a80070; */
     border-radius: 10px;
     padding: 16px;
     margin: 16px 10px;
@@ -130,6 +156,20 @@ h2 {
 main h2 { 
     margin-left: 10px;
     margin-top: 30px;
+}
+
+main h3 {
+    border-bottom: 1px solid #a80070;
+    color: #3a0027;
+    background-image: linear-gradient(#a80070, #a80070);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+main h3:hover {
+    background-size: 100% 1px;
 }
 
 .torneo img {
@@ -153,6 +193,116 @@ main h2 {
 
 
 
-/* inicio main... */
+/* inicio main GALERIA */
 
-/* inicio main... */
+.galeria {
+    /* background-color: rgb(255, 219, 225); */
+    padding: 10px;
+    text-align: center;
+}
+
+.galeria h3 {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.galeria img {
+    width: 20%;
+    border: 1px solid #a80070;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-right: 2%;
+    vertical-align:middle;
+    transform: scale(0.9);
+    transition: all 1s ease; 
+    filter: brightness(75%);
+
+}
+  
+.galeria img:hover {
+    cursor: pointer;
+    transform: scale(1.2);  
+    filter: brightness(100%);
+}  
+
+/* fin main GALERIA */
+
+/* inicio main CONTACTO */
+
+
+.contacto {
+    display: flex;
+    gap: 24px;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+
+.contacto div {
+    width: 100%;
+}
+
+.contacto ul li {
+    list-style: none;
+}
+
+.formulario p {
+    font-weight: 600;
+    color: #3a0027;
+}
+
+.formulario p input,
+.formulario p textarea {
+    width: 100%;
+    background-color: rgb(247, 232, 243);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 6px 1px;
+}
+
+.formulario textarea {
+    resize: none;
+    height: 100px;
+}
+
+.formulario input[type="submit"] {
+    background-color: #920162;
+    border-color: #920162;
+    color: white;
+    padding: 6px 20px;
+    width: auto;
+    margin-left: 88%;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #3a0027;
+    border-color: #3a0027;
+}
+
+.redes {
+    background-color: pink;
+}
+
+.redes img {
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+
+.redes ul li {
+    margin-top: 40px;
+    display: inline-block;
+    margin: 10px;
+    padding: 25px;
+}
+
+.redes ul li:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 0px 38px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 38px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 38px -7px rgba(0,0,0,0.75);
+}
+
+/* fin main CONTACTO */

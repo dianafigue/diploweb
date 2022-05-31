@@ -85,7 +85,7 @@ h3 {
 
 /* para que la imagen esté gris y al pasar el cursor tome sus colores originales*/
 img{
-    filter: grayscale(100%);
+    filter: grayscale(10%);
     cursor: pointer;
 }
 
