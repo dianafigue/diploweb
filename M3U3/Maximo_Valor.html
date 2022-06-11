@@ -9,7 +9,7 @@
 <body>
     <script>
     
-        var lista_n=[40,70,10,30,60,20,50,80,100,90];
+        var lista_n=[40,70,10,30,100,20,50,80,60,90];
         var almacena_max=0;
 
         console.log(lista_n.length);    // lista
@@ -17,13 +17,15 @@
         console.log(almacena_max);      // variable auxiliar en 0 por ahora
 
         for (let numero of lista_n) {
-            if (almacena_max < numero)
+            if (almacena_max < numero) {
                 almacena_max = numero;
+            }
         }
+        
         console.log(almacena_max);      // valor actualizado de variable auxiliar
 
-        let indice = lista_n.indexOf(almacena_max);
-        console.log(indice)             // posición de valor más alto del listado
+        let indice = lista_n.indexOf(almacena_max)+1;
+        console.log(indice)             // posición de valor más alto del listado, se le suma 1 porque cuenta desde 0
         
         document.write('El valor más alto que existe en el array es ' + almacena_max + ', y se ubica en la posición "' + indice + '" del listado.')
 
