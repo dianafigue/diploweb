@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máximo Valor</title>
+</head>
+<body>
+    <script>
+    
+        var lista_n=[40,70,10,30,100,20,50,80,60,90];
+        var almacena_max=0;
+
+        console.log('Lista de números: ' + lista_n.length);
+        console.log('Cantidad de números: ' + lista_n);
+        console.log('Valor actual de la variable que amacenará el número más alto: ' + almacena_max);
+
+        for (let numero of lista_n) {
+            if (almacena_max < numero)
+                almacena_max = numero;
+        }
+        console.log('Valor más alto del listado de números: ' + almacena_max);
+
+        let indice = lista_n.indexOf(almacena_max);
+        console.log('Posición del valor más alto dentro del listado: ' + indice)
+        
+        document.write('El valor más alto que existe en el array es ' + almacena_max + ', y se ubica en la posición "' + indice + '" del listado.')
+
+    </script>
+</body>
+</html>

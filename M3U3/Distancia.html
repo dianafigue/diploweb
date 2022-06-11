@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distancia a recorrer</title>
+</head>
+
+<body>
+    <script>
+
+        var valor1;
+
+        valor1 = prompt('Ingrese la distancia que va a recorrer en metros:', '');
+
+        if (valor1 <= 1000) {
+            document.write('Para recorrer '+valor1+' metros, la forma mas apropiada de trasladarse es a PIE');
+        } else {
+            if (valor1 > 1000 && valor1 <= 10000) {
+                document.write('Para recorrer '+valor1+' metros, la forma mas apropiada de trasladarse es en BICICLETA')
+            } else {
+                if (valor1 > 10000 && valor1 <= 30000) {
+                    document.write('Para recorrer '+valor1+' metros, la forma mas apropiada de trasladarse es en COLECTIVO')
+                } else {
+                    if (valor1 > 30000 && valor1 <= 100000) {
+                        document.write('Para recorrer '+valor1+' metros, la forma mas apropiada de trasladarse es en AUTO')
+                    } else {
+                        if (valor1 > 100000) {
+                            document.write('Para recorrer '+valor1+' metros, la forma mas apropiada de trasladarse es en AVION')
+                        }
+                    }
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>
