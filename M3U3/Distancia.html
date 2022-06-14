@@ -12,27 +12,19 @@
     <script>
 
         var valor1;
-
         valor1 = prompt('Ingrese la distancia que va a recorrer en metros:', '');
 
+        
         if (valor1 <= 1000) {
-            document.write('Para recorrer '+valor1+' metros, la forma mas apropiada de trasladarse es a PIE');
-        } else {
-            if (valor1 > 1000 && valor1 <= 10000) {
-                document.write('Para recorrer '+valor1+' metros, la forma mas apropiada de trasladarse es en BICICLETA')
-            } else {
-                if (valor1 > 10000 && valor1 <= 30000) {
-                    document.write('Para recorrer '+valor1+' metros, la forma mas apropiada de trasladarse es en COLECTIVO')
-                } else {
-                    if (valor1 > 30000 && valor1 <= 100000) {
-                        document.write('Para recorrer '+valor1+' metros, la forma mas apropiada de trasladarse es en AUTO')
-                    } else {
-                        if (valor1 > 100000) {
-                            document.write('Para recorrer '+valor1+' metros, la forma mas apropiada de trasladarse es en AVION')
-                        }
-                    }
-                }
-            }
+            document.write('Para recorrer ' + valor1 + ' metros, la forma mas apropiada de trasladarse es a PIE');
+        } else if (valor1 > 1000 && valor1 <= 10000) {
+            document.write('Para recorrer ' + valor1 + ' metros, la forma mas apropiada de trasladarse es en BICICLETA');
+        } else if (valor1 > 10000 && valor1 <= 30000) {
+            document.write('Para recorrer ' + valor1 + ' metros, la forma mas apropiada de trasladarse es en COLECTIVO');
+        } else if (valor1 > 30000 && valor1 <= 100000) {
+            document.write('Para recorrer ' + valor1 + ' metros, la forma mas apropiada de trasladarse es en AUTO');
+        }else if (valor1 > 100000) {
+                document.write('Para recorrer ' + valor1 + ' metros, la forma mas apropiada de trasladarse es en AVION');
         }
 
     </script>
