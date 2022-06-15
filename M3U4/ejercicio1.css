@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(255, 255, 255); 
+}
+
+h1 {
+    text-align: center;
+}
+
+.cuadrados {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.boton {
+    width: 120px;
+    height: 120px;
+    border-radius: 3px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.rojo {
+    background-color: #fb4747;
+}
+
+.amarillo {
+    background: #f9fe42;
+}
+
+.verde {
+    background: #8cd260;
+}

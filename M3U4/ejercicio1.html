@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click sobre Colores</title>
+    <link rel="stylesheet" href="ejercicio1.css">
+</head>
+
+
+<body id="fondo">
+    <h1>Probando Colores</h1>
+
+    <div class="cuadrados">
+
+        <div class="boton rojo" onClick="Color_R()">
+            <p>Fondo Rojo</p>
+        </div>
+        <div class="boton amarillo" onClick="Color_A()">
+            <p>Fondo Amarillo</p>
+        </div>
+        <div class="boton verde" onClick="Color_V()">
+            <p>Fondo Verde</p>
+        </div>
+
+    </div>
+
+
+    <script type='text/javascript'>
+
+        function Color_R() {
+            var element = document.getElementById("fondo");
+            element.style.backgroundColor = '#fb4747';
+        }
+
+        function Color_A() {
+            var element = document.getElementById("fondo");
+            element.style.backgroundColor = '#f9fe42';
+        }
+
+        function Color_V() {
+            var element = document.getElementById("fondo");
+            element.style.backgroundColor = '#8cd260';
+        }
+
+    </script>
+
+
+</body>
+</html>
