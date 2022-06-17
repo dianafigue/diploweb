@@ -31,8 +31,30 @@
             }
         ];
 
-        const aprobados = alumnos.filter(lasnotas => lasnotas.nota >= 7)
+        var aprobados = alumnos.filter(function (alumn) {
+            return alumn.nota >= 7;
+        });
+
         console.log(aprobados);
+       
+        
+        // Como hacer para que me devuelva solo la propiedad "nombre" del nuevo array de "aprobados"?? 
+        // ESTO NO FUNCIONA:
+
+        // var solonombre = aprobados.filter(function (nombre) {
+        //      return nombre.nombre;
+        // });
+        // console.log(solonombre);
+
+
+
+
+
+
+        // OTRA FORMA DE RESOLVER QUE DEVUELVA LOS APROBADOS CON TODAS SUS PROPIEDADES
+        // const aprobados = alumnos.filter(lasnotas => lasnotas.nota >= 7)
+        // console.log(aprobados);
+
 
     </script>
 
