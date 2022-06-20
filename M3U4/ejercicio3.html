@@ -36,8 +36,22 @@
         });
 
         console.log(aprobados);
-       
-        
+
+        // UNA FORMA DE IMPRIMIRLOS
+        // for (var i = 0; i < aprobados.length; i++) {
+        //     document.write(`<p>Alumno: ${aprobados[i].nombre}</p>`)
+        // }
+
+        // OTRA FORMA DE IMPRIMIRLOS 
+
+        var aprob_name = aprobados.map(function(element){
+            return element.nombre;
+        });
+
+        document.write('Los alumnos que aprobaron son: ' + aprob_name);
+
+
+
         // Como hacer para que me devuelva solo la propiedad "nombre" del nuevo array de "aprobados"?? 
         // ESTO NO FUNCIONA:
 

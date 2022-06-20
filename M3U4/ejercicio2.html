@@ -11,15 +11,14 @@
 
 <body>
 
-    <!-- Programar un contador de caracteres para un textarea. -->
-
     <h2>Contador de caracteres de textarea</h2>
 
     <div class="caja">
         <textarea rows="3" maxlength="300" id="mensaje"></textarea>
         <div class="barra_debajo">
             <div id="contador">0/300</div>
-            <input type="reset" value="Borrar">
+            <!-- Elimino el botón "borrar" ya que solo funciona si está dentro de un formulario -->
+            <!-- <input type="reset" value="Borrar"> -->
         </div>
     </div>
 
@@ -27,8 +26,8 @@
 
     <script>
 
-        const mensaje = document.getElementById('mensaje');
-        const contador = document.getElementById('contador');
+        var mensaje = document.getElementById('mensaje');
+        var contador = document.getElementById('contador');
 
         mensaje.addEventListener('input', function (e) {
             const target = e.target;
@@ -36,6 +35,11 @@
             const longitudAct = target.value.length;
             contador.innerHTML = `${longitudAct}/${longitudMax}`;
         });
+
+//      OTRA FORMA DE HACERLO SIN LA "/" Y EL 300. En este caso solo aparece el nro cdo levantas el dedo de la tecla
+        // mensaje.addEventListener('keyup', function () {
+            // contador.innerText = mensaje.value.length;
+        // });
 
     </script>
 
