@@ -1,0 +1,40 @@
+.inscribite h2 {
+    color: white;
+    text-shadow: 2px 2px 4px #3a0027;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 50px;
+    padding: 100px 0px 0px 0px;
+}
+
+.inscribite p{
+    font-size: 18px;
+    font-weight: 500;
+    color: white; 
+    text-shadow: 2px 2px 5px #3a0027;
+    width: 65%;
+    padding-right: 120px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    margin-bottom: 70px;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+}
+
+.button {
+    background-color: #920162;
+    border-color: #920162;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 300px;
+}
+
+.button:hover {
+    background-color: #3a0027;
+    border-color: #3a0027;
+}

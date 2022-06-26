@@ -1,0 +1,29 @@
+.galeria {
+    /* background-color: rgb(255, 219, 225); */
+    padding: 10px;
+    text-align: center;
+}
+
+.galeria h3 {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.galeria img {
+    width: 20%;
+    border: 1px solid #a80070;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-right: 2%;
+    vertical-align:middle;
+    transform: scale(0.9);
+    transition: all 1s ease; 
+    filter: brightness(75%);
+}
+  
+.galeria img:hover {
+    cursor: pointer;
+    transform: scale(1.2);  
+    filter: brightness(100%);
+}  

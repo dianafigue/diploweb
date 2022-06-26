@@ -1,0 +1,39 @@
+.torneo {
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 10px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+main h2 { 
+    font-size: 25px;
+    color: #920162;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+main h3 {
+    border-bottom: 1px solid #a80070;
+    color: #3a0027;
+    background-image: linear-gradient(#a80070, #a80070);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+main h3:hover {
+    background-size: 100% 1px;
+}
+
+.torneo img {
+    border-radius: 13px;
+    display: block;
+    max-width: 225px;
+}
+
+.torneo:nth-child(even) {
+    flex-direction: row-reverse;
+}

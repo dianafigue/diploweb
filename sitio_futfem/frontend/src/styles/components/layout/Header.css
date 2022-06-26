@@ -1,0 +1,21 @@
+header {
+    background-color: #920162;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    /* font-style: italic; */
+    display: inline-block;
+    position: relative;
+    bottom: 22px;
+}
+
+header img {
+    max-width: 15%;
+    margin-top: 5px;
+}
