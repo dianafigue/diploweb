@@ -3,7 +3,7 @@ import '../styles/components/pages/HomePage.css';
 
 const HomePage = (props) => {
     return (
-        <main>
+        <main class="foto_portada">
             <div>
                 <section className="holder inscribite">
                     <h2>¡Vení a jugar con tu equipo!</h2>

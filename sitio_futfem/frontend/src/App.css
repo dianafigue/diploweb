@@ -6,11 +6,11 @@ body {
   line-height: 25px;
 }
 
-/* .foto_portada {
-  background-image: url("../img/home/fondo_portada.jpg");
+.foto_portada {
+  background-image: url("../public/img/home/fondo_portada.jpg");
   background-size: cover;
   opacity: 95%;
-} */
+}
 
 .holder {
   max-width: 960px;
