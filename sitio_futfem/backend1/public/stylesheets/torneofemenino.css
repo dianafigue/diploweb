@@ -1,0 +1,89 @@
+/* font-family: 'Plus Jakarta Sans', sans-serif; */
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.foto_portada {
+    background-image: url("../img/home/fondo_portada.jpg");
+    background-size: cover;
+    opacity: 95%;
+}
+
+header {
+    background-color: #920162;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+header img {
+    max-width: 15%;
+    margin-top: 5px;
+    margin-bottom: 22px;
+}
+
+nav {
+    background-color: #920162;
+}
+
+nav ul {
+    list-style: none;
+    padding-right: 15px;
+    display: flex;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+    display: block;
+    border-radius: 5px;
+    /* text-align: center; */
+    background-image: linear-gradient(#77255c,#d80d94);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+   
+}
+
+nav ul li a:hover {
+    background-color: #a80070;
+    border-radius: 5px;
+    background-size: 100% 2px;
+}
+
+footer {
+    background-color: #3a0027;
+    clear: both;
+    color: white;
+    text-align: center;
+    padding: 15px 0 5px;
+}
+
+nav ul li a.activo {
+    background-color: #a80070;
+    border-radius: 5px;
+    background-size: 100% 2px;
+}
+
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+ } 
+
+
